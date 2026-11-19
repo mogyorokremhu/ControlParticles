@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "controlparticles",
+	"version": "${version}",
+	"name": "Control Particles",
+	"description": "Client-side control over particles and screen effects: hide or reduce crits, damage hearts, potion swirls, rain, walking dust and more, with presets.",
+	"authors": ["mogyorokremhu"],
+	"contact": {
+		"homepage": "https://github.com/mogyorokremhu/ControlParticles",
+		"sources": "https://github.com/mogyorokremhu/ControlParticles",
+		"issues": "https://github.com/mogyorokremhu/ControlParticles/issues"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.controlparticles.ControlParticlesClient"]
+	},
+	"mixins": [
+		{
+			"config": "controlparticles.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

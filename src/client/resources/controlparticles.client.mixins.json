@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.controlparticles.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ClientLevelMixin",
+		"EntityMixin",
+		"LivingEntityMixin",
+		"MobEffectFogEnvironmentMixin",
+		"ParticleEngineMixin",
+		"WeatherEffectRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
